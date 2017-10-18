@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+  	<head>
+     	<title>Smart Home</title>
+     	<meta charset="utf-8" /> 
+     	<link href="css/style.css" rel="stylesheet" /> 
+     	<link href="css/bootstrap.css" rel="stylesheet" />
+     	<link href="css/bootstrap2-toggle.css" rel="stylesheet" />
+     	<link href="css/bootstrap-select.css" rel="stylesheet" />
+   	</head>
+
+   	<body>
+
+   	<header>
+        <div class="row">
+            
+               <div class="col-xs-1 col-sm-1 col-md-1"><a href="HW02.html"><img src="img/logo.png" class="img-thumbnail img-responsive" alt="Smart Home" id="logo" style="margin-bottom: 20px; max-height: 80px;" /></a></div>
+               <div class="col-xs-11 col-sm-11 col-md-11"><h1 style="text-align: center">MY SMART HOME</h1></div>  
+          
+               <div class="col-xs-12">               
+                  <nav class="navbar navbar-default">
+                     <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                        </button>
+                        <a href="HW02.html" class="navbar-brand">Home</a>
+                     </div>
+                     
+                  </nav>
+               </div>
+               
+            </div>   
+         </header>	
+
+   	<div class="container">
+   		<div class="row">
+
+	   		<div class="div1 col-xs-4" style="text-align: justify; border: 1px solid black;">
+	         	<form id="SH" name="SmartHome">
+		         	<h1>Smart Home</h1>
+		        <!--<div class="media">
+					  <div class="media-left media-middle">
+					    <a href="#">
+					      <img class="media-object" src="img/fridge.jpg" style="margin-bottom: 20px; max-height: 80px;" alt="fridge">
+					    </a>
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">Fridge</h4>
+					    <p class="list-group-item-text">This is fridge's description</p>
+					  </div>
+					</div>
+					<div class="media">
+					  <div class="media-left media-middle">
+					    <a href="#">
+					      <img class="media-object" src="img/wm.jpg" style="margin-bottom: 20px; max-height: 80px;" alt="washing machine">
+					    </a>
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">Washing machine</h4>
+					    <p class="list-group-item-text">This is washing machine's description</p>
+					  </div>
+					</div>
+					<div class="media">
+					  <div class="media-left media-middle">
+					    <a href="#">
+					      <img class="media-object" src="img/tv.jpg" style="margin-bottom: 20px; max-height: 80px;" alt="tv">
+					    </a>
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">TV</h4>
+					    <p class="list-group-item-text">This is TV's description</p>
+					  </div>
+					</div>-->
+
+	            
+	         	</form>
+	      	</div>
+
+	      	<div class="col-xs-3 col-xs-offset-1" style="border: 1px solid black; ">
+
+	      		<form id="Device" name="Device">
+
+		         	<h1>Device</h1>
+		         	<div  class="form-group" id="formGrDiv">
+
+		    			<label for="name">Name</label>
+		    			<input id="name" class="form-control" />
+		    			<label for="brand">Brand</label>
+		    			<input id="brand" class="form-control" />
+		    			<label for="power">Power</label>
+		    			<input id="power" class="form-control" />
+		    			<label for="energyEfficiencyClass">Energy efficiency class</label>
+		    			<input id="energyEfficiencyClass" class="form-control" />
+
+		    			<label for="desc1" id="labDesc1"></label>
+		    			<input id="desc1" class="form-control" />
+		    			<label for="desc2" id="labDesc2"></label>
+		    			<input id="desc2" class="form-control" />
+		    			<label for="desc3" id="labDesc3"></label>
+		    			<input id="desc3" class="form-control" />
+
+					</div>
+
+		    			<label>State</label>
+						<input  type="checkbox" data-toggle="toggle" data-width="100" data-height="40" data-onstyle="success" id="switch">
+
+						
+						<button  class="btn btn-primary form-control" disabled="disabled" style="margin: 20px 0 20px 0;" id="addBut">Add device</button>
+						
+		  		    			
+		   				
+		  			
+	            
+	         	</form>
+
+	      	</div>
+
+	      	<div class="col-xs-3 col-xs-offset-1" style="border: 1px solid black; ">
+	      		<form id="AddDev" name="AddDev">
+		         	<h1>Add Device</h1>
+<!--
+		         	<div class="form-group">
+
+		         	<select class="selectpicker form-control" data-style="btn-primary" show-tick title="Choose device" id="selector">
+					  <option id="dropdownDevice1" value="1">Fridge</option>
+					  <option id="dropdownDevice2">Washing Machine</option>
+					  <option id="dropdownDevice3">TV</option>
+					</select>
+					</div>
+-->
+
+		         	<div class="form-group">
+		         		<div class="dropdown">
+						   <button class="btn btn-primary form-control" type="button" data-toggle="dropdown">
+						      Add Device <span class="caret"></span>
+						   </button>
+						   <ul class="dropdown-menu">
+						      <li class="dropdownDevice" id="dropdownDevice1"><button class="btn btn-primary form-control" id="addDevice1">Fridge</button></li>
+						      <li class="divider"></li>
+						      <li class="dropdownDevice"><button class="btn btn-primary form-control" id="addDevice2">Washing Machine</button></li>
+						      <li class="divider"></li>
+						      <li class="dropdownDevice"><button class="btn btn-primary form-control" id="addDevice3">TV</button></li>
+						   </ul> 
+						</div>
+ 
+			   				
+
+		  			</div>
+	            
+	         	</form>
+
+	      	</div>
+
+	      	
+
+	      	<div class="col-xs-3 col-xs-offset-1" style="border: 1px solid black; margin-top: 100px;">
+	      		<form id="DelDev" name="DelDev">
+		         	<h1>Delete Device</h1>
+
+		         	<div class="form-group">
+		         				    			
+		   				<button id="deleteButton" class="btn btn-danger form-control" disabled="disabled" >Delete device</button> 
+
+		  			</div>
+	            
+	         	</form>
+
+	      	</div>
+
+
+	    </div>
+
+	   
+   
+   <script src="js/jquery-3.1.1.js"></script>   
+   <script src="js/bootstrap.js"></script>
+   <script src="js/bootstrap2-toggle.js"></script>
+   <script src="js/bootstrap-select.js"></script>
+
+   <script src="js/script.js"></script>
+
+		<script>
+		 $('#switch').bootstrapToggle("disable");
+		</script>
+
+   </div>
+   </body>
+</html>
